@@ -1,0 +1,4 @@
+name: JokerTool
+version: '${project.version}'
+main: com.remiaft.jokertool.JokerTool
+api-version: '1.20'
