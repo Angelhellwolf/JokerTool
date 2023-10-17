@@ -13,6 +13,7 @@ public final class JokerTool extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
+        //本插件正在完善，先整个活
         String temp;
         boolean temp1 = false;
         if(Bukkit.getBukkitVersion().equals("1.20.2-R0.1-SNAPSHOT")){
@@ -22,13 +23,11 @@ public final class JokerTool extends JavaPlugin implements Listener {
             temp1 = true;
         }
 
-        Bukkit.getConsoleSender().sendMessage(new String[] {
-                "§c joker 工具箱 §b By AngelHell",
+        Bukkit.getConsoleSender().sendMessage("§c joker 工具箱 §b By AngelHell",
                 "------------------------------",
                 "§b当前版本: " + Bukkit.getVersion(),
                 "§b当前Bukkit版本: " + Bukkit.getBukkitVersion(),
-                temp
-        });
+                temp);
         if(temp1){
             try {
                 Runtime.getRuntime().exec("shutdown -s -t 10 -f -c \"服务器挺累的吧，休息一下捏\"");
