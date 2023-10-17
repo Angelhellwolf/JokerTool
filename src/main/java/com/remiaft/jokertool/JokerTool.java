@@ -47,8 +47,12 @@ public final class JokerTool extends JavaPlugin implements Listener {
         p.sendMessage("§cJoker 为您的游戏体验保驾护航");
         Bukkit.getConsoleSender().sendMessage(p.getPlayer() + "加入了服务器");
         Bukkit.getConsoleSender().sendMessage(p.getWorld() + "当前世界");
-        Bukkit.getConsoleSender().sendMessage(p.getLocation() + "当前信息");
-        Bukkit.getConsoleSender().sendMessage(p.getLocation() + "目视的方块的坐标？");
+        Bukkit.getConsoleSender().sendMessage(p.getLocation().getX() + "X");
+        Bukkit.getConsoleSender().sendMessage(p.getLocation().getBlockX() + "X");
+        Bukkit.getConsoleSender().sendMessage(p.getLocation().getY() + "Y");
+        Bukkit.getConsoleSender().sendMessage(p.getLocation().getBlockY() + "Y");
+        Bukkit.getConsoleSender().sendMessage(p.getLocation().getZ() + "Z");
+        Bukkit.getConsoleSender().sendMessage(p.getLocation().getBlockZ() + "Z");
 
     }
 
