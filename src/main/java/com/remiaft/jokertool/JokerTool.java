@@ -14,7 +14,7 @@ public final class JokerTool extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         String temp;
-        Boolean temp1 = false;
+        boolean temp1 = false;
         if(Bukkit.getBukkitVersion().equals("1.20.2-R0.1-SNAPSHOT")){
             temp = "§b检测到版本是1.20.2，已正确为您加载该插件";
         }else {
